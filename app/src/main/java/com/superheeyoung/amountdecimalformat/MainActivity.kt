@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.superheeyoung.amountdecimalformat.ui.amount.AmountScreen
 import com.superheeyoung.amountdecimalformat.ui.theme.AmountDecimalFormatTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,10 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             AmountDecimalFormatTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    AmountScreen()
                 }
             }
         }
